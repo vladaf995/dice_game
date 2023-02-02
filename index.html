@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <section class="counter">
+      <p>GAME START</p>
+      <span id="countdowntimer">3</span>
+    </section>
+
+    <section class="input-name">
+      <img src="./img/dice.png" alt="" />
+      <form>
+        <label>First player:</label><br />
+        <input type="text" id="fname" value="" /><br />
+        <label>Second player:</label><br />
+        <input type="text" id="sname" value="" /><br /><br />
+        <button id="start-game">Start game</button>
+      </form>
+    </section>
+    <section class="game-layout">
+      <div class="game-layout__left-box">
+        <div class="game-layout__left-box__content p">
+          <p id="player-first">Player 1</p>
+          <img id="imageLeft" src="" alt="" />
+        </div>
+        <div class="game-layout__left-box__score p">
+          <p id="scoreLeft">SCORE:</p>
+          <p id="curentLeft">CURENT:</p>
+        </div>
+      </div>
+      <div class="game-layout__btn">
+        <button id="roll">ROLL</button>
+        <button id="store">STORE</button>
+      </div>
+      <div class="game-layout__arrow">
+        <img id="arrow-left" src="./img/MicrosoftTeams-image (22).png" alt="" />
+        <img
+          id="arrow-right"
+          src="./img/MicrosoftTeams-image (21).png"
+          alt=""
+        />
+      </div>
+      <div class="game-layout__right-box">
+        <div class="game-layout__right-box__content p">
+          <p id="player-second">Player 2</p>
+          <img id="image" src="" alt="" />
+        </div>
+        <div class="game-layout__right-box__score p">
+          <p id="score">SCORE:</p>
+          <p id="curent">CURENT:</p>
+        </div>
+      </div>
+    </section>
+    <script src="/js/dice-roll.js"></script>
+    <script src="/js/input-name.js"></script>
+  </body>
+</html>

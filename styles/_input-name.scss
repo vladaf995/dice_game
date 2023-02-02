@@ -1,0 +1,52 @@
+@import "config";
+
+.input-name {
+  background-color: $color-backgorund;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > img {
+    margin-bottom: 30px;
+  }
+
+  label {
+    color: $color-text;
+
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  input {
+    background-color: $color-input-bg;
+    border: 5px solid $color-border;
+    color: $color-border;
+
+    font-size: 24px;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    text-transform: capitalize;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: $color-input-bg;
+    color: $color-border;
+    border: 5px solid $color-border;
+
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}

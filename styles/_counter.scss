@@ -1,0 +1,24 @@
+@import "config";
+
+.counter {
+  height: 100vh;
+  background-color: $color-text;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > p {
+    color: $color-border;
+
+    font-weight: bold;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  > span {
+    color: $color-border;
+    font-size: 250px;
+    padding-top: 5%;
+  }
+}

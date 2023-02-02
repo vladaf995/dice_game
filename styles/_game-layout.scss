@@ -1,0 +1,78 @@
+@import "config";
+
+.game-layout {
+  background-color: $color-backgorund;
+  display: none;
+  height: 100vh;
+  padding: 5px;
+
+  &__left-box {
+    border-right: 3px solid $color-border;
+
+    flex: 1;
+    position: relative;
+
+    &__content {
+      text-align: center;
+    }
+
+    &__score {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 150px;
+      left: 50px;
+    }
+  }
+
+  &__right-box {
+    flex: 1;
+    position: relative;
+
+    &__content {
+      text-align: center;
+    }
+
+    &__score {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 150px;
+      left: 50px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    row-gap: 15px;
+    margin-left: -125px;
+    z-index: 1;
+
+    > button {
+      color: $color-text;
+      border: 3px solid $color-border;
+
+      padding: 15px 80px;
+      border-radius: 30px;
+      background-color: #62b6b7;
+      cursor: pointer;
+      font-size: 25px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 42%;
+    top: 10%;
+
+    > img {
+      margin-right: 50px;
+    }
+
+    #arrow-right {
+      visibility: hidden;
+    }
+  }
+}
